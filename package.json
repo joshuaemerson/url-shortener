@@ -28,6 +28,7 @@
     "start": "node src/server.js"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
     "prettier": "^3.6.2"
   }
