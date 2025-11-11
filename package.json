@@ -14,9 +14,6 @@
   "imports": {
     "#src/*": "./src/*",
     "#config/*": "./src/config/*",
-    "#controllers/*": "./src/controllers/*",
-    "#models/*": "./src/models/*",
-    "#routes/*": "./src/routes/*",
     "#utils/*": "./src/utils/*"
   },
   "scripts": {
@@ -24,12 +21,16 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "init-db": "node src/config/database.js",
     "dev": "node --watch src/server.js",
     "start": "node src/server.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2"
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "prettier": "^3.6.2",
+    "redis": "^5.9.0"
   }
 }
